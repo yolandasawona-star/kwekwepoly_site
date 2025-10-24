@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #111111;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background-color: #120042;
+  color: rgb(255, 254, 254);
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.logo {
+  width: 100px;
+  animation: slideDown 1.5s ease;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #a3a105;
+  text-align: center;
+  padding: 10px;
+  animation: slideUp 1.5s ease;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #000;
+  transform: scale(1.1);
+}
+
+/* Main Section */
+main {
+  padding: 20px;
+  background: white;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Footer */
+footer {
+  background-color: #7a7805;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* 🔥 Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+  main {
+    margin: 10px;
+    padding: 15px;
+  }
+}

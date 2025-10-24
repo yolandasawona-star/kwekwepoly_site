@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwekwe Polytechnic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="playWelcomeMessage()">
+
+  <header class="fade-in">
+    <img src="Images/logo.png" alt="Kwekwe Polytechnic Logo" class="logo slide-down">
+    <h1>Kwekwe Polytechnic</h1>
+    <p>Your Future Begins Here!</p>
+  </header>
+
+  <nav class="slide-up">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="fade-in">
+    <h2>Welcome to Kwekwe Polytechnic</h2>
+    <p>We offer quality technical education to prepare students for the modern workforce.</p>
+  </main>
+
+  <footer class="fade-in">
+    <p>&copy; 2025 Kwekwe Polytechnic. All rights reserved.</p>
+  </footer>
+
+  
+  <script>
+    function playWelcomeMessage() {
+      const audio = new SpeechSynthesisUtterance("Welcome to queque Polytechnic");
+      audio.pitch = 1;
+      audio.rate = 1;
+      audio.volume = 1;
+      speechSynthesis.speak(audio);
+    }
+  </script>
+
+</body>
+</html>
